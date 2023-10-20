@@ -1,1 +1,127 @@
 @import url(./presets.css);
+
+main {
+    margin: auto;
+    height: 55vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    color: var(--us-color-dark);
+}
+
+main #section-login {
+    padding: 1%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #section-login form {
+    background-color: var(--us-color-dark);
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--us-color-light);
+    box-shadow: 0px 5px 20px var(--us-color-dark);
+    border-radius: 10px;
+}
+
+main #section-login form * {
+    margin-bottom: 10%;
+}
+
+main #section-login form input {
+    height: 10%;
+    padding: 5%;
+    border-radius: 5px;
+    border: none;
+}
+
+main #section-login form button {
+    height: 10%;
+    width: 80%;
+    border-radius: 30px;
+    border: none;
+    margin: 0 auto 10% auto;
+    font-size: 1.2rem;
+    background-color: var(--us-color-light);
+    color: var(--us-color-dark);
+}
+
+main #section-login form button:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: var(--us-color-dark);
+    color: var(--us-color-light);
+    box-shadow: 1px 1px 5px var(--us-color-light);
+}
+
+main #section-login form p a {
+    color: var(--us-color-light);
+}
+
+main #section-cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    color: var(--us-color-dark);
+}
+
+main #section-cards ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main #section-cards ul li {
+    height: 25vh;
+    background-color: var(--us-color-dark);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    border: none;
+    color: var(--us-color-light);
+}
+
+main #section-cards ul li:hover {
+    transition: .3s;
+    box-shadow: 5px 5px 5px var(--us-color-dark);
+}
+
+main #section-cards ul li * {
+    padding: 3%;
+}
+
+main #section-cards ul li hr {
+    padding: 0;
+}
+
+#section-other-access {
+    height: 15vh;
+    padding: 2% 0 0 5%;
+    display: flex;
+    flex-direction: column;
+    color: var(--us-color-dark);
+}
+
+#section-other-access ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-other-access ul li {
+    padding: .3%;
+}
+
+#section-other-access ul li a {
+    text-decoration: none;
+    color: var(--us-color-dark);
+}
+
+#section-other-access ul li a:hover {
+    transition: 1s;
+    margin-right: 10px;
+}
