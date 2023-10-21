@@ -1,5 +1,7 @@
 @import url(./presets.css);
 
+/* default-mode */
+
 main {
     margin: auto;
     height: 55vh;
@@ -9,12 +11,22 @@ main {
     color: var(--us-color-dark);
 }
 
+/* dark-mode */
+
+#theme-switcher:checked + #app-container main {
+    background-color: var(--us-color-dark);
+}
+
+/* default-mode */
+
 main #section-login {
     padding: 1%;
     width: 30%;
     display: flex;
     flex-direction: column;
 }
+
+/* default-mode */
 
 main #section-login form {
     background-color: var(--us-color-dark);
@@ -26,6 +38,15 @@ main #section-login form {
     box-shadow: 0px 5px 20px var(--us-color-dark);
     border-radius: 10px;
 }
+
+/* dark-mode */
+
+#theme-switcher:checked + #app-container main #section-login form {
+    border: 1px solid var(--us-color-light);
+    box-shadow: 0px 5px 20px var(--us-color-light);
+}
+
+/* default-mode */
 
 main #section-login form * {
     margin-bottom: 10%;
@@ -61,6 +82,8 @@ main #section-login form p a {
     color: var(--us-color-light);
 }
 
+/* default-mode */
+
 main #section-cards {
     width: 70%;
     display: flex;
@@ -69,11 +92,21 @@ main #section-cards {
     color: var(--us-color-dark);
 }
 
+/* dark-mode */
+
+#theme-switcher:checked + #app-container main #section-cards {
+    color: var(--us-color-light);
+}
+
+/* default-mode */
+
 main #section-cards ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* default-mode */
 
 main #section-cards ul li {
     height: 25vh;
@@ -85,10 +118,26 @@ main #section-cards ul li {
     color: var(--us-color-light);
 }
 
+/* dark-mode */
+
+#theme-switcher:checked + #app-container main #section-cards ul li {
+    border: 1px solid var(--us-color-light);
+}
+
+/* default-mode */
+
 main #section-cards ul li:hover {
     transition: .3s;
     box-shadow: 5px 5px 5px var(--us-color-dark);
 }
+
+/* dark-mode */
+
+#theme-switcher:checked + #app-container main #section-cards ul li:hover {
+    box-shadow: 5px 5px 5px var(--us-color-light);
+}
+
+/* default-mode */
 
 main #section-cards ul li * {
     padding: 3%;
@@ -98,13 +147,27 @@ main #section-cards ul li hr {
     padding: 0;
 }
 
+/* default-mode */ 
+
 #section-other-access {
-    height: 15vh;
+    height: 20vh;
     padding: 2% 0 0 5%;
     display: flex;
     flex-direction: column;
     color: var(--us-color-dark);
 }
+
+/* dark-mode */
+
+#theme-switcher:checked + #app-container #section-other-access {
+    background-color: var(--us-color-dark);
+}
+
+#theme-switcher:checked + #app-container #section-other-access * {
+    color: var(--us-color-light);
+}
+
+/* default-mode */
 
 #section-other-access ul {
     list-style: none;
@@ -125,3 +188,5 @@ main #section-cards ul li hr {
     transition: 1s;
     margin-right: 10px;
 }
+
+/* dark-mode */

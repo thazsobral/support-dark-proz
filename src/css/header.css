@@ -8,12 +8,34 @@ header {
     padding: 0 1vw;
 }
 
+/* dark-mode */
+
+#theme-switcher:checked + #app-container header {
+    background-color: var(--us-color-dark);
+}
+
+/* default-mode */
+
 header h1 {
     font-size: 1.2rem;
     font-weight: normal;
     color: var(--us-color-dark);
 }
 
+/* dark-mode */
+
+#theme-switcher:checked + #app-container header h1 {
+    color: var(--us-color-light);
+}
+
+/* default-mode */
+
 header img {
     height: 100%;
+}
+
+/* dark-mode */
+
+#theme-switcher:checked + #app-container header img {
+    filter: brightness(100);
 }
